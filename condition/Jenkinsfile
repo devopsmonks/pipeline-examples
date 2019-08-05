@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("Condition Test") {
             steps {
-                echo "hello"
+                echo "hello 123"
             }
         }
     }
