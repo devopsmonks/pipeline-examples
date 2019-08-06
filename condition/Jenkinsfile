@@ -1,11 +1,12 @@
 pipeline {
+
     // no agent required to run here. All steps run in flyweight executor on Master
     agent none
 
     stages {
         stage("Condition Test") {
             steps {
-                echo "hello"
+                echo "Hello Suresh Bukka"
             }
         }
     }
