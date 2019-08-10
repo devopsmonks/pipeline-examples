@@ -18,7 +18,7 @@ pipeline {
      * 3. aborted, success, unstable or failure - depending on status
      */
         always {
-            echo "I AM ALWAYS first"
+            echo "Vamsi IS ALWAYS first"
         }
         changed {
             echo "CHANGED is run second"
