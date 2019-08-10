@@ -15,6 +15,14 @@ pipeline {
   agent any
 
   stages {
+    stage("install maven")
+	{
+	steps	
+		{
+		sh "yum install maven"
+		}
+	}
+
     stage("Environment Test") {
       steps {
         sh 'echo "FOO is $FOO"'
