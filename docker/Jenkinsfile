@@ -1,6 +1,6 @@
 pipeline {
   agent { 
-	docker{
+	dockerfile{
 		filename 'Dockerfile.alternate'
 		dir 'docker'
 		args "-v /tmp:/tmp -p 8000:8000"
