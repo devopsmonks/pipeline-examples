@@ -1,5 +1,5 @@
 pipeline {
-  agent {
+  agent { dockerfile true
     dockerfile {
       /*
         * The Default is "Dockerfile" but this can be changed.
