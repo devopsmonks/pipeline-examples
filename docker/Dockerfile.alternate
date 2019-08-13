@@ -1,0 +1,2 @@
+mkdir myproject && cd myproject
+echo "hello" > hello
