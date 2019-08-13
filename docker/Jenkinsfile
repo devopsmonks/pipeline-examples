@@ -1,16 +1,5 @@
 pipeline {
-  agent { dockerfile true 
-/*   
- dockerfile {
-      /*
-        * The Default is "Dockerfile" but this can be changed.
-        * This will build a new container based on the contents of "Dockerfile.alternate"
-        * and run the pipline inside this container
-        */
-      filename "Dockerfile"
-      args "-v /tmp:/tmp -p 8000:8000"
-    }
-*/
+  agent { dockerfile true
   }
   stages {
     stage("Docker Test") {
