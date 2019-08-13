@@ -1,3 +1,2 @@
 FROM openjdk:8-alpine
-mkdir myproject && cd myproject
-echo "hello" > hello
+
