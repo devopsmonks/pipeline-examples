@@ -5,7 +5,7 @@ agent any
 // use the 'tools' section to use specific tool versions already defined in Jenkins config 
   tools {
     maven "maven-apache-3.6.1"
-    jdk "jdk11"
+    jdk "JDK9.0.4"
   }
 
 
