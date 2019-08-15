@@ -1,5 +1,8 @@
 pipeline {
-  /*
+ 
+agent any
+
+ /*
    * The environment section is used for setting environment variables and will allow for
    * expanding variable and other methods to set those values as long as the return type is a String.
    * The 'readMavenPom()' method is provided by the Pipeline Utility Steps plugin
@@ -12,7 +15,7 @@ pipeline {
     ACME_FUNC = readMavenPom().getArtifactId()
   }
 
-  agent any
+ 
 
   stages {
     stage("install maven")
