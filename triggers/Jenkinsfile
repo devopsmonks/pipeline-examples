@@ -26,7 +26,7 @@ pipeline {
     stage("Trigger Test") {
       steps {
         echo "hello"
-        sh "test -f Jenkinsfile"
+        sh "test -f /Jenkinsfile"
       }
     }
   }
