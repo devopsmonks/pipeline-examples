@@ -1,12 +1,14 @@
 pipeline {
-  // use the 'tools' section to use specific tool versions already defined in Jenkins config 
+  
+agent any
+
+// use the 'tools' section to use specific tool versions already defined in Jenkins config 
   tools {
-    maven "apache-maven-3.1.0"
+    maven "apache-maven-3.6.1"
     jdk "default"
   }
 
-  // run on any available agent
-  agent any
+
 
   stages {
     stage("build") {
