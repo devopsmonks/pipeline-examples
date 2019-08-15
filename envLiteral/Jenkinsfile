@@ -12,7 +12,8 @@ agent any
     BUILD_NUM_ENV = currentBuild.getNumber()
     ANOTHER_ENV = "${currentBuild.getNumber()}"
     INHERITED_ENV = "\${BUILD_NUM_ENV} is inherited"
-    ACME_FUNC = readMavenPom().getArtifactId()
+    	VERSION = readMavenPom().getVersion()
+	ACME_FUNC = readMavenPom().getArtifactId()
   }
 
  
