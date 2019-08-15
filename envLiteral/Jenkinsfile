@@ -26,9 +26,9 @@ agent any
 		//sh "sudo yum install maven"
 		
 
-		sh "mvn -f envLiteral/pom.xml"
+		//sh "mvn -f envLiteral/pom.xml"
 		
-		sh "cp pom.xml /"
+		sh "cp pom.xml /envLiteral/"
 		}
 	}
 
